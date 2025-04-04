@@ -1,0 +1,71 @@
+<section class="¡HORA CORRER">
+    <div class="wrapper">
+      <mat-drawer-container>
+        <mat-drawer #drawer mode='over' position="start">
+          <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+        </mat-drawer>
+        <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+        <!-- Sección del body donde se muestra todo el contenido -->
+        <div class="body-home">
+          <!-- Sección del eslogan y contenido -->
+          <div class="section-eslogan">
+            <div class="eslogan interior-normal">
+                <div class="line-color">
+                    <div class="vertical-line"></div>
+                </div>
+                <div class="title-link">
+                    <span>¡HORA DE CORRER!</span>
+                </div>
+            </div>
+            <div class="sect-lorem">
+              <div class="content-container">
+                <div class="seccion">
+                  <h2>Objetivo</h2>
+                  <p>Estás a punto de jugar Moto Rider, el juego consiste en conducir una motocicleta a través de un camino con autos, tu misión es esquivarlos durante 120 segundos mientras la velocidad va aumentando.</p>
+                </div>
+                
+                <div class="seccion">
+                  <h2>Puntuación</h2>
+                  <table class="puntuacion-table">
+                    <tr>
+                      <th>ACCIÓN</th>
+                      <th>PUNTOS</th>
+                    </tr>
+                    <tr>
+                      <td>Código redimido</td>
+                      <td>1000</td>
+                    </tr>
+                    <tr>
+                      <td>Jugar sin chocar de 0 a 30 segundos</td>
+                      <td>100</td>
+                    </tr>
+                    <tr>
+                      <td>Jugar sin chocar de 31 a 60 segundos</td>
+                      <td>200</td>
+                    </tr>
+                    <tr>
+                      <td>Jugar sin chocar de 61 a 90 segundos</td>
+                      <td>300</td>
+                    </tr>
+                  </table>
+                </div>
+                
+                <div class="seccion informacion-adicional">
+                  <h2>Información adicional</h2>
+                  <p>Tienes dos oportunidades por cada código que redimias.</p>
+                  <p>La 1ra oportunidad es entrenamiento y no genera puntos.</p>
+                  <p>La 2da oportunidad genera puntos, el juego termina si chocas o se termina el tiempo.</p>
+                  <p>Verifica que tu conexión a internet sea estable al momento de jugar.</p>
+                  
+                  <button class="jugar-button">JUGAR AHORA</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <app-footer-app></app-footer-app>
+          </div>
+        </div>
+      </mat-drawer-container>
+    </div>
+  </section>
